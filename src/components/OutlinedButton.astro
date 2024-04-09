@@ -1,0 +1,40 @@
+---
+interface Props {
+    buttonCTA: string;
+    href: string;
+}
+
+const {buttonCTA, href} = Astro.props;
+---
+
+
+<a class="filled-button" href={href}>{buttonCTA}</a>
+
+<style>
+    .filled-button {
+        margin: auto;
+        padding: 0.5em 4em;
+        border: 2pt solid #444b6e;
+        border-radius: 50px;
+        color: #444b6e;
+        text-align: center;
+        text-decoration: none;
+        max-width: max-content;
+        font-size: 1.15em;
+        /* box-shadow: #444b6e50 4px 4px 3px; */
+        /* margin-block-start: auto; */
+    }
+
+    .filled-button:hover {
+        background-color: #444b6e;
+        color: white;
+        transition-duration: 0.5s;
+    }
+
+    @media all and (max-width: 800px) {
+        .filled-button {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+</style>
