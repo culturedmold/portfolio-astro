@@ -1,0 +1,50 @@
+---
+import OutlinedButton from './OutlinedButton.astro';
+
+// import FilledButton from "../components/FilledButton.astro";
+
+interface Props {
+    title: string;
+    bodyCopy: string;
+}
+
+const {title, bodyCopy} = Astro.props;
+---
+
+<div class="container-inner">
+
+    <h3>
+        {title}
+    </h3>
+
+    <p>
+        {bodyCopy}
+    </p>
+
+    <slot/>
+</div>
+
+<style>
+    .container-inner {
+        flex: 1 0 21%;;
+        align-self: stretch;
+        /* width: calc(100% * (1/2) - 10px - 1px); */
+        /* flex: 1 0 21%; */
+    }
+
+    p {
+        font-size: 1.15em;
+        margin: 2em 0em 2em 0em;
+        line-height: 2.5ch;
+        /* width: 100vw; */
+    }
+
+    h3 {
+        margin: 8pt 0pt;
+        font-size: 2em;
+        font-weight: lighter;
+        font-family: "DM Serif Display", serif;
+        color: #444b6e;
+    }
+
+</style>
