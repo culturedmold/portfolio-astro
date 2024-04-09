@@ -10,37 +10,32 @@ import NavigationBar from "../components/NavigationBar.astro";
 <DefaultLayout title="Tyler Hampton", subtitle="Software Developer, Product Management Expert, & Computer Science Enthusiast">
     <div slot="experience-slot">
         <ContentSection title="Product Management">
-            <ContentSectionInner title="Test Inner Content Section" bodyCopy="Test Body Copy">
-                <OutlinedButton buttonCTA="View More" href=""/>
-            </ContentSectionInner>
-            
-            <ContentSectionInner title="Test Inner Content Section" bodyCopy="Test Body Copy">
-                <OutlinedButton buttonCTA="View More" href=""/>
-            </ContentSectionInner>
+            <ContentSectionInner title="Test Inner Content Section" bodyCopy="Test Body Copy"/>
+            <ContentSectionInner title="Test Inner Content Section" bodyCopy="Test Body Copy"/>
         </ContentSection>
     </div>
 
     <div slot="projects-slot">
         <!-- JAVA -->
         <ContentSection title="Java">
-            <ContentSectionInner title="Appointment Scheduler Application with MySQL Database" bodyCopy="This application is a functional desktop app that stores and manages appointments. Logic is implemented to handle overlapping appointments, custom filtering/reporting, logging authentication attempts, etc. The application uses a JavaFX frontend and MySQL backend database to store the appointments.">
-                <OutlinedButton buttonCTA="View More" href=""/>
+            <ContentSectionInner title="Appointment Scheduler Application with MySQL Database" bodyCopy="A desktop app that stores and manages appointments. Logic is implemented to handle overlapping appointments, custom filtering/reporting, logging authentication attempts, etc. The application uses a JavaFX frontend and MySQL backend database to store the appointments.">
+                <OutlinedButton buttonCTA="View More" href="https://github.com/culturedmold/Java-Appointment-Scheduler"/>
             </ContentSectionInner>
-            <ContentSectionInner title="Inventory Management Desktop Application" bodyCopy="Test Body Copy">
-                <OutlinedButton buttonCTA="View More" href=""/>
+            <ContentSectionInner title="Inventory Management Desktop Application" bodyCopy="A desktop application that manages inventory for a small business. Utilizes JavaFX for the front-end. Includes logic to handle dependencies between inventory and associated parts, error handling, and documentation. Utilizes a MVC design pattern.">
+                <OutlinedButton buttonCTA="View More" href="https://github.com/culturedmold/Inventory-Management-Desktop-Application"/>
             </ContentSectionInner>
         </ContentSection>
 
         <!-- PYTHON -->
         <ContentSection title="Python">
             <ContentSectionInner title="Delivery Route Alogithm" bodyCopy="This program takes a matrix of addresses (in the form of a CSV) and a CSV of packages to be delivered and calculates the shortest route to delivery the packages. Various constraints are considered such as number of trucks available, maximum allowed mileage traveled, and scheduled delivery address updates. The algorithm utilizes a 'greedy' approach (nearest neighbor) to determine the order packages are to be delivered and a custom hashing function with associated data structure to store the package objects in memory.">
-                <OutlinedButton buttonCTA="View More" href=""/>
+                <OutlinedButton buttonCTA="View More" href="https://github.com/culturedmold/Delivery-Route-Algorithm"/>
             </ContentSectionInner>
             <ContentSectionInner title="Flask API" bodyCopy="This Flask backend API takes JSON (representing various heart disease symptoms/indicators) from a POST request and runs it through a Machine Learning Model capable of predicting the presence of Coronary Heart Disease within the next 10 years.">
-                <OutlinedButton buttonCTA="View More" href="#"/>
+                <OutlinedButton buttonCTA="View More" href="https://github.com/culturedmold/capstone-flask-backend"/>
             </ContentSectionInner>
             <ContentSectionInner title="Logistic Regression Machine Learning Model" bodyCopy="Utlizing Pandas, SciKit-Learn, Numpy, and Imbalance Learn to prepare, clean, and balance a dataset before running the data through a Logistic Regression machine learning model. The model predicts the probability of an individual experiencing Coronary Heart Disease within the next ten years based on an array of symptoms.">
-                <OutlinedButton buttonCTA="View Balls" href="#"/>
+                <OutlinedButton buttonCTA="View More" href="https://github.com/culturedmold/CHD-classification-model"/>
             </ContentSectionInner>
         </ContentSection>
 
@@ -53,8 +48,8 @@ import NavigationBar from "../components/NavigationBar.astro";
 
         <!-- HTML/CSS/JS -->
         <ContentSection title="HTML / CSS / Javascript">
-            <ContentSectionInner title="Heart Disease Prediction Full Stack Application" bodyCopy="Lorem Ipsum">
-                <OutlinedButton buttonCTA="View More" href="#"/>
+            <ContentSectionInner title="Heart Disease Prediction Full Stack Application" bodyCopy="A full-stack application utilizing an HTML/CSS/Javascript front-end and Python (Flask) backend. The application gathers input from the user regarding various health and heart disease related factors. Upon submitting their information, the user will see their risk of developing Coronary Heart Disease (CHD) within the next ten years. The front-end is deployed to GitHub pages and the backend is hosted by Heroku.">
+                <OutlinedButton buttonCTA="View More" href="https://github.com/culturedmold/capstone-frontend"/>
             </ContentSectionInner>
         </ContentSection>
 
