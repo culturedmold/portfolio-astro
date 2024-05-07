@@ -2,6 +2,8 @@
 import NavigationBar from "../components/NavigationBar.astro";
 import H1ContentSection from "../components/H1ContentSection.astro";
 import Footer from "../components/Footer.astro";
+import { type FooterLink } from "../components/Footer.astro";
+import BasicAnchorLink from "../components/BasicAnchorLink.astro";
 // import "../global-CSS/global.css";
 
 interface Props {
@@ -37,7 +39,11 @@ const {title, subtitle} = Astro.props;
             </div>
         </main>
 
-        <Footer/>
+        <Footer>
+          <BasicAnchorLink display="Email", id="emailAnchorLink", link=#openEmail, openNewTab="_blank"/>
+          <BasicAnchorLink display="LinkedIn", id="linkedInAnchorLink", link=#linkedIn, openNewTab="_blank"/>
+          <BasicAnchorLink display="GitHub", id="gitHubAnchorLink", link="https://github.com/culturedmold", openNewTab="_blank"/>
+        </Footer>
         
     </body>
 </html>

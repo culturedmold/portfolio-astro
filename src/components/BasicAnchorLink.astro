@@ -1,0 +1,30 @@
+---
+interface Props {
+    id: string;
+    display: string;
+    link: string;
+    openNewTab: string;
+}
+
+const {id, display, link, openNewTab} = Astro.props;
+---
+
+<a id={id}, href={link}, target={openNewTab}>{display}</a>
+
+<style>
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+@media all and (max-width: 600px) {
+    a {
+        font-size: 12pt;
+    }
+}
+
+</style>
